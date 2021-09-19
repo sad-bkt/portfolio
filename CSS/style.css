@@ -1,0 +1,43 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    color: powderblue;
+}
+
+a {
+    color: midnightblue; //cornflowerblue;
+}
+aside {
+    //width: 40%;
+    padding-left: .10rem; // левый внутренний отступ
+    margin-left: .10rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+}
+
+aside > p {
+    margin: .5rem;
+}
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+header, footer{
+    background-color: lightskyblue;
+    color: black;
+}
+
+footer > a {
+    color: black;
+}
+
+.img-me{
+    float: right;
+    margin: 0 50% 1em 1em;
+}
