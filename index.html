@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<html lang="ru">
 <head>
     <link rel="stylesheet" type="text/css" href="CSS\style.css" />
     <meta charset="UTF-8">
@@ -13,31 +13,28 @@
 </head>
 
 <body>
-<header role="banner">
+<header>
     <pre>
          _____
-         |___|
  ________|___|__
-|______/00\_____|
+|______/00\__Ⓡ_|
 |_____|0000|____|
 |______\00/_____|
 |_______________|
-        </pre>
+    </pre>
     <nav role="navigation">
         <dl>
             <dt><a href="#1">Тарифы</a></dt>
             <dt><a href="#2">Контакты</a></dt>
         </dl>
-        <aside>
-        </aside>
     </nav>
-    <q>Я кому-то был так нужен в этом мире, что он меня сфотографировал</q>
+    <q>Я кому-то был так нужен в этом мире, что он меня <em>сфотографировал</em></q>
 </header>
 
 <main>
     <section>
-        <h1>Фотограф Семина Анастасия M33041</h1>
-        <p><img src="img\me.jpg" class="img-me" height="250px" align="right" alt="me"></p>
+        <h1>Фотограф Семина Анастасия</h1>
+        <p><img src="img\me1.jpg" class="img-me" height="250px" align="right" alt="me"></p>
         <h3>Почему я?</h3>
         <ul>
             <li>фотографирую c <time datetime="2019">2019</time> года</li>
@@ -54,65 +51,74 @@
 
     <section>
         <h3>Примеры работ</h3>
-        <span>
-            <img src="img\julia.jpg" width="200px" align="left" alt="julia">
-            <img src="img\lidia.jpg" width="200px" align=”middle” border=”25px” alt="lidia">
-            <img src="img\rita.jpg" width="200px" align=”right”  border=”25px” alt="rita">
-        </span>
-        <p>
-        <span>
-            <img src="img\ksu.jpg" width="300px" align=”left”  border=”25px” alt="rita">
-            <img src="img\anton.jpg" width="300px" align=”right”  border=”25px” alt="rita">
-        </span></p>
-        <article>
-            // Пост из Инстаграм
-        </article>
+        <div>
+            <img src="img\julia1.jpg" width="200px" align="left" alt="julia">
+            <img src="img\lidia1.jpg" width="200px" align=”middle” border=”25px” alt="lidia">
+            <img src="img\rita1.jpg" width="200px" align=”right”  border=”25px” alt="rita">
+            <img src="img\ksu1.jpg" width="300px" align=”left” alt="ksu">
+            <img src="img\anton1.jpg" width="300px" align=”right” alt="anton">
+        </div>
     </section>
 
     <section>
         <h3 id="1">Тарифы</h3>
-        Записываешься до тогда-то акция такая-то
+        <p>Записываешься до тогда-то, акция такая-то</p>
+        <div>
+            <div>
+                Мини
+            </div>
+            <div>
+                Базовый
+            </div>
+            <div>
+                Макси
+            </div>
+        </div>
     </section>
 
-
+    <!--
     <section>
         <h3>Отзывы</h3>
     </section>
-    <form>
-        <div>
-            <label for="nickname">Ваше имя:</label>
-        </div>
-        <div>
-            <input type="text" id="nickname" name="nickname">
-        </div>
-        <div>
-            <label for="user-email">E-mail:</label>
-        </div>
-        <div>
-            <input type="email" id="user-email" name="user-email">
-        </div>
-        <div>
-            <label for="phone">Номер телефона:</label>
-        </div>
-        <div>
-            <input type="tel" id="phone" name="phone">
-        </div>
-        <div>
-            <label for="content">Комментарий:</label>
-        </div>
-        <div>
-            <textarea rows="10" cols="50" id="content" name="content"></textarea>
-        </div>
-        <div>
-            <input type="submit" value="Записаться">
-        </div>
-    </form>
+    -->
+    <section>
+        <h3>Форма для записи</h3>
+        <form> <!-- определить action для отправки инфо-->
+            <div>
+                <label for="nickname">Ваше имя:</label>
+            </div>
+            <div>
+                <input type="text" id="nickname" name="nickname">
+            </div>
+            <div>
+                <label for="user-email">E-mail:</label>
+            </div>
+            <div>
+                <input type="email" id="user-email" name="user-email">
+            </div>
+            <div>
+                <label for="phone">Номер телефона:</label>
+            </div>
+            <div>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div>
+                <label for="content">Комментарий:</label>
+            </div>
+            <div>
+                <textarea rows="10" cols="50" id="content" name="content"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Записаться">
+            </div>
+        </form>
+    </section>
 </main>
 
 <footer>
     <h3 id="2">Контакты:</h3>
     <ul>
-        <li>instagram: <a href="https://www.instagram.com/sad.bkt.ph/?hl=ru">@sad.bkt.ph</a> </li>
+        <li>instagram: <a href="https://www.instagram.com/sad.bkt.ph/?hl=ru">@sad.bkt.ph</a></li>
     </ul>
 </footer>
 </body>
