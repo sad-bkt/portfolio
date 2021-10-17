@@ -3,13 +3,128 @@ body {
     color: white;
 }
 
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu {
+    list-style: none;
+    margin: 40px 0 5px;
+    padding: 25px 0 5px;
+    text-align: left;
+    background: white;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li:after {
+    content: "|";
+    color: #606060;
+    display: inline-block;
+    vertical-align:top;
+}
+
+.menu li:last-child:after, .menu li:first-child:after {
+    content: none;
+}
+
+.menu a {
+    text-decoration: none;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 34px 0 30px;
+    font-size: 17px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: color .2s;
+}
+.menu a, .menu a:visited {
+    color: #9d999d;
+}
+
+.menu a.current, .menu a:hover{
+    color: midnightblue;
+}
+
+.menu a:before, .menu a:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    top: auto;
+    right: 50%;
+    bottom: -5px;
+    left: 50%;
+    background: midnightblue;
+    transition: .8s;
+}
+
+.menu a:hover:before, .menu .current:before {
+    left: 0;
+}
+
+.menu a:hover:after, .menu .current:after {
+    right: 0;
+}
+
+@media (max-width: 550px) {
+    .menu {padding-top: 0;}
+    .menu li {display: block;}
+    .menu li:after {content: none;}
+    .menu a {
+        padding: 25px 0 20px;
+        margin: 0 30px;
+    }
+/*
+a {
+    display: block;
+    color: #010440;
+    text-decoration: #010440;
+}
+
+a:hover {
+    color: #8582D9;
+    text-decoration: #8582D9;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: lightsteelblue;
+    z-index: 1;
+    /*
+
+    padding: 0 100px;
+    height: 80px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 10;*/
+}
+/*
+
+footer{
+    background-color: lightskyblue;
+    color: black;
+}
 h1 {
     color: powderblue;
 }
 
-a {
-    color: midnightblue; //cornflowerblue;
-}
 aside {
     //width: 40%;
     //padding-left: .10rem; // левый внутренний отступ
@@ -27,11 +142,7 @@ aside > p {
 p {
     font-family: 'Fira Sans', sans-serif;
 }
-
-header, footer{
-    background-color: lightskyblue;
-    color: black;
-}
+*/
 
 footer > a {
     color: black;

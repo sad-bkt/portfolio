@@ -8,31 +8,25 @@
     <title>Портфолио</title>
     <meta name="keywords" content="фотограф, СПб, Питер, Санкт-Петербург, портфолио, съемка, портрет">
     <meta name="description" content="Фотограф Семина Анастасия. Провожу портретные съемки на улице и в студии.">
-    <!-- <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
-    -->
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
 
 <body>
 <header>
-    <pre>
-         _____
- ________|___|__
-|______/00\__Ⓡ_|
-|_____|0000|____|
-|______\00/_____|
-|_______________|
-    </pre>
-    <nav role="navigation">
-        <dl>
-            <dt><a href="#1">Тарифы</a></dt>
-            <dt><a href="#2">Контакты</a></dt>
-        </dl>
+    <a class="logo" href=""><img src="img/logo.png" height="50px"></a>
+    <nav role="navigation" class="menu">
+        <ul>
+            <li><a href="#about me">Обо мне</a></li>
+            <li><a href="#portfolio">Портфолио</a></li>
+            <li><a href="#tariffs">Тарифы</a></li>
+            <li><a href="#FAQ">FAQ</a></li>
+        </ul>
     </nav>
-    <q>Я кому-то был так нужен в этом мире, что он меня <em>сфотографировал</em></q>
+    <a class="login" href="#">Вход</a>
 </header>
 
 <main>
-    <section>
+    <section class="about me" id="about me">
         <h1>Фотограф Семина Анастасия</h1>
         <p><img src="img\me1.jpg" class="img-me" height="250px" align="right" alt="me"></p>
         <h3>Почему я?</h3>
@@ -49,7 +43,7 @@
         </ul>
     </section>
 
-    <section>
+    <section class="portfolio" id="portfolio">
         <h3>Примеры работ</h3>
         <div>
             <img src="img\julia1.jpg" width="200px" align="left" alt="julia">
@@ -60,8 +54,8 @@
         </div>
     </section>
 
-    <section>
-        <h3 id="1">Тарифы</h3>
+    <section class="tariffs" id="tariffs">
+        <h3>Тарифы</h3>
         <p>Записываешься до тогда-то, акция такая-то</p>
         <div>
             <div>
@@ -81,6 +75,11 @@
         <h3>Отзывы</h3>
     </section>
     -->
+
+    <section class="FAQ" id="FAQ">
+        <h3>FAQ</h3>
+    </section>
+
     <section>
         <h3>Форма для записи</h3>
         <form> <!-- определить action для отправки инфо-->
@@ -116,7 +115,7 @@
 </main>
 
 <footer>
-    <h3 id="2">Контакты:</h3>
+    <h3>Контакты:</h3>
     <ul>
         <li>instagram: <a href="https://www.instagram.com/sad.bkt.ph/?hl=ru">@sad.bkt.ph</a></li>
     </ul>
