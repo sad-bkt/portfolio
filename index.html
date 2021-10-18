@@ -17,35 +17,43 @@
     <nav role="navigation" class="menu">
         <ul>
             <li><a href="#about me">Обо мне</a></li>
-            <li><a href="#portfolio">Портфолио</a></li>
+            <li><a href="#portfolio">Портфолио & Отзывы</a></li>
             <li><a href="#tariffs">Тарифы</a></li>
             <li><a href="#FAQ">FAQ</a></li>
         </ul>
     </nav>
+    <div class="contacts">
+        <a href="https://www.instagram.com/sad.bkt.ph" target="_blank"><img src="img/instagram.png" alt="инстаграм"></a>
+        <a href="https://t.me/sad_bkt" target="_blank"><img src="img/telegram.png" alt="телеграм"></a>
+    </div>
     <a class="login" href="#">Вход</a>
 </header>
 
 <main>
-    <section class="about me" id="about me">
-        <h1>Фотограф Семина Анастасия</h1>
-        <p><img src="img\me1.jpg" class="img-me" height="250px" align="right" alt="me"></p>
-        <h3>Почему я?</h3>
-        <ul>
-            <li>фотографирую c <time datetime="2019">2019</time> года</li>
-            <li>провела больше 50 съемок</li>
-            <li>помогаю подобрать образ</li>
-        </ul>
-        <h3>Оборудование:</h3>
-        <ul>
-            <li>Canon 200d</li>
-            <li>Объектив EF-S 18-55 IS STM</li>
-            <li>Портретный объектив Canon EF 50mm f/1.8 STM</li>
-        </ul>
+    <section class="about-me" id="about me">
+        <div class="about-me__text">
+            <h1>Фотограф Семина Анастасия</h1>
+            <h3>Почему я?</h3>
+            <ul>
+                <li>фотографирую c <time datetime="2019">2019</time> года</li>
+                <li>провела больше 50 съемок</li>
+                <li>помогаю подобрать образ</li>
+            </ul>
+            <h3>Оборудование:</h3>
+            <ul>
+                <li>Canon 200d</li>
+                <li>Объектив EF-S 18-55 IS STM</li>
+                <li>Портретный объектив Canon EF 50mm f/1.8 STM</li>
+            </ul>
+        </div>
+        <img src="img\me1.jpg" class="about-me__image" height="250px" align="right" alt="me">
+
+
     </section>
 
     <section class="portfolio" id="portfolio">
-        <h3>Примеры работ</h3>
-        <div>
+        <h3 class="portfolio__text">Примеры работ</h3>
+        <div class="=portfolio__image">
             <img src="img\julia1.jpg" width="200px" align="left" alt="julia">
             <img src="img\lidia1.jpg" width="200px" align=”middle” border=”25px” alt="lidia">
             <img src="img\rita1.jpg" width="200px" align=”right”  border=”25px” alt="rita">
@@ -54,18 +62,33 @@
         </div>
     </section>
 
-    <section class="tariffs" id="tariffs">
+    <section class="section-tariffs" id="tariffs">
         <h3>Тарифы</h3>
-        <p>Записываешься до тогда-то, акция такая-то</p>
-        <div>
-            <div>
+        <p>Фотостудия оплачивается отдельно</p>
+        <div class="tariffs">
+            <div class="tariffs__tariff">
                 Мини
+                <ul>
+                    <li>съемка 1 час</li>
+                    <li>10 фото в ретуши на ваш выбор, 5 на мой, исходники отдаю необработанные</li>
+                </ul>
+                Цена:
             </div>
-            <div>
+            <div class="tariffs__tariff">
                 Базовый
+                <ul>
+                    <li>съемка 2 часа</li>
+                    <li>30 фото в ретуши на ваш выбор, исходники отдаю необработанные</li>
+                </ul>
+                Цена:
             </div>
-            <div>
+            <div class="tariffs__tariff">
                 Макси
+                <ul>
+                    <li>продолжительность съемки договорная</li>
+                    <li>15 фото в ретуши, исходники отдаю необработанные</li>
+                </ul>
+                Цена:
             </div>
         </div>
     </section>
@@ -74,13 +97,14 @@
     <section>
         <h3>Отзывы</h3>
     </section>
-    -->
+
 
     <section class="FAQ" id="FAQ">
         <h3>FAQ</h3>
     </section>
+    -->
 
-    <section>
+    <section class="registration-form">
         <h3>Форма для записи</h3>
         <form> <!-- определить action для отправки инфо-->
             <div>
@@ -114,11 +138,8 @@
     </section>
 </main>
 
+
 <footer>
-    <h3>Контакты:</h3>
-    <ul>
-        <li>instagram: <a href="https://www.instagram.com/sad.bkt.ph/?hl=ru">@sad.bkt.ph</a></li>
-    </ul>
 </footer>
 </body>
 </html>

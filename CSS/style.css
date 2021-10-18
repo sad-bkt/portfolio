@@ -1,27 +1,39 @@
 body {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: #464646;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    //font-size: 25px;
+    //line-height: 1.2;
 }
 
 header {
     display: flex;
     justify-content: space-around;
+    //margin: 40px 0 5px;
+    padding: 5px 0;
+    text-align: center;
+    background: rgb(247, 248, 253);
+    box-shadow: 0 0 10px black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    align-items: center;
 }
+
 
 .menu {
     list-style: none;
-    margin: 40px 0 5px;
-    padding: 25px 0 5px;
     text-align: left;
-    background: white;
 }
 
 .menu ul {
     display: flex;
 }
 
-.menu li {
+.menu li, .contacts, .login, .logo {
     display: inline-block;
+    vertical-align:center;
 }
 
 .menu li:after {
@@ -31,27 +43,26 @@ header {
     vertical-align:top;
 }
 
-.menu li:last-child:after, .menu li:first-child:after {
+.menu li:last-child:after {
     content: none;
 }
 
-.menu a {
+.menu a, .login {
     text-decoration: none;
-    font-family: 'Ubuntu Condensed', sans-serif;
     letter-spacing: 2px;
     position: relative;
-    padding-bottom: 20px;
-    margin: 0 34px 0 30px;
+    margin: 0 50px;
     font-size: 17px;
     text-transform: uppercase;
     display: inline-block;
     transition: color .2s;
 }
-.menu a, .menu a:visited {
+
+.menu a, .menu a:visited, .login {
     color: #9d999d;
 }
 
-.menu a.current, .menu a:hover{
+.menu a.current, .menu a:hover, .login{
     color: midnightblue;
 }
 
@@ -76,13 +87,107 @@ header {
 }
 
 @media (max-width: 550px) {
-    .menu {padding-top: 0;}
-    .menu li {display: block;}
-    .menu li:after {content: none;}
+    .menu {
+        padding-top: 0;
+    }
+
+    .menu li {
+        display: block;
+    }
+
+    .menu li:after {
+        content: none;
+    }
+
     .menu a {
         padding: 25px 0 20px;
         margin: 0 30px;
     }
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-around;
+    //padding: 0 20px;
+    //margin: 0 20px;
+}
+
+.contacts a img {
+    max-width: 40px;
+    margin: 0 20px;
+}
+.about-me, .portfolio, .registration-form, .section-tariffs {
+    margin: 100px 60px 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #cff3f3;
+    border-radius: 50px;
+    // box-shadow: 0 0 10px black;
+}
+
+.section-tariffs{
+    background: -moz-default-background-color;
+}
+
+.portfolio, .registration-form, .section-tariffs {
+    flex-direction: column;
+}
+
+.about-me__text, .portfolio__text {
+     flex-direction: column;
+
+ }
+
+.about-me__image {
+    max-width: 40%;
+    height: 40%;
+    //border-radius: 150px;
+    padding:0;
+    font-size:0;
+}
+
+.portfolio__image {
+
+}
+
+.tariffs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.tariffs__tariff {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    border-color: midnightblue;
+    border-style: solid;
+}
+
+.tariffs__tariff ul {
+    list-style-image: url(https://www.freeiconspng.com/img/52);
+    list-style-position: outside;
+}
+
+.registration-form {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
 /*
 a {
     display: block;
@@ -113,8 +218,10 @@ header {
     background-color: #FFFFFF;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     position: relative;
-    z-index: 10;*/
+    z-index: 10;
 }
+*/
+
 /*
 
 footer{
@@ -142,13 +249,16 @@ aside > p {
 p {
     font-family: 'Fira Sans', sans-serif;
 }
-*/
 
 footer > a {
     color: black;
 }
 
-.img-me{
+.img-me {
     float: right;
     margin: 0 50% 1em 1em;
 }
+
+*/
+
+
